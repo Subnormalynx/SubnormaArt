@@ -1,0 +1,52 @@
+#contenedor-inicio{
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  position: relative;
+}
+#contenedor-contenido-inicio{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+}
+#div-articulo-navegador-CCI{
+  width: 80%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #00000010;
+}
+#div-navegador{
+  width: 100%;
+  height: max-content;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #00000030;
+  position: sticky;
+  top: 0;
+}
+#div-articulo-CCI{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #00000020;
+}
+#aside-noticia-CCI{
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
