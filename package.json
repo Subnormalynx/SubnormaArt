@@ -1,9 +1,9 @@
 {
-  "name": "subnormasends",
+  "name": "subnormaart",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
-  "homepage": "https://Subnormalynx.github.io/SubnormaArt",
+  "homepage": "https://Subnormalynx.github.io/SubnormaArt/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
