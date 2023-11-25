@@ -18,7 +18,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #00000010;
 }
 #div-navegador{
   width: 100%;
@@ -27,9 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #00000030;
   position: sticky;
-  top: 0;
+  top: 6vh;
 }
 #div-articulo-CCI{
   width: 100%;
@@ -38,7 +36,6 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  background: #00000020;
 }
 #aside-noticia-CCI{
   width: 20%;
@@ -47,6 +44,6 @@
   flex-direction: column;
   align-items: center;
   position: sticky;
-  top: 0;
+  top: 6vh;
 }
 

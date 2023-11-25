@@ -1,0 +1,14 @@
+.div-info-usuario-post{
+  width: 100%;
+  height: max-content;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.imagen-perfil-post{
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: black;
+  border-radius: 100%;
+}

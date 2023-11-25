@@ -10,8 +10,43 @@
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 1000;
+  font-family: Lucida Sans;
   color: white;
   cursor: pointer;
+  position: relative;
+}
+.aparicion-enter{
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(30px);
+}
+.aparicion-enter-active{
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all .4s ease-in-out;
+}
+.aparicion-enter-done{
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0px);
+}
+.aparicion-exit{
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0px);
+}
+.aparicion-exit-active{
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(30px);
+  transition: all .4s ease-in-out;
+}
+.aparicion-exit-done{
+  opacity: 0;
+  filter: blur(30px);
+  transform: translateX(-50%);
+
 }

@@ -13,34 +13,72 @@
   display: flex;
   justify-content: center;
 }
-#div-lista-amigos{
+#div-listaAmigos-titulo{
   width: 70%;
   height: max-content;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#div-titulo-amigos{
+  width: 100%;
+  height: max-content;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  gap: 2rem;
+  position: sticky;
+  top: 6vh;
+}
+#titulo-amigos{
+  font-size: 3rem;
+  font-family: Lucida Sans;
+  background: linear-gradient(90deg, #0d94ca, #8b0dca);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(1px 1px 1px #00000090);
+}
+
+#div-lista-amigos{
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  padding: 2rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
   flex-wrap: wrap;
-  background: #00000020;
+  background: #00000010;
 }
 #div-buscar-amigos{
   width: 30%;
   height: 100vh;
   padding: 1rem 0.2rem;
   display: flex;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  background-color: #00000040;
+  gap: 1rem;
+  background-color: #00000015;
 }
 #input-buscar-amigo{
   width: 95%;
-  height: 1.4rem;
+  height: 2rem;
   padding: 0 1rem;
-  background-color: white;
-  font-size: 0.8rem;
-  border: none;
-  border-radius: 1rem;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Lucida Sans;
+  border: 2px solid #0d94ca;
+  border-radius: 0.4rem;
   outline: none;
+  position: sticky;
+  top: 9vh;
 }

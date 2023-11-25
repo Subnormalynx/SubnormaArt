@@ -1,0 +1,205 @@
+#contenedor-perfil{
+	width: 100%;
+	height: max-content;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+/* ESPACIO PARA LAS IMAGENES DEL PERFIL */
+
+#div-imagenes-perfil{
+	width: 100%;
+	height: 45vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+#div-IPerfil{
+	width: 100%;
+	height: 45vh;
+	position: relative;
+}
+#imagen-portada-perfil{
+	width: 100%;
+	height: 100%;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	background-color: #00000010;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#imagen-personal-perfil{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	background-color: #000000;
+	box-shadow: 0px 0px 10px 1px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	transform: translateY(-25%), translateX(-72%);
+	left: 72%;
+	top: 25%;
+}
+
+/* ESPACIO PARA LA INFORMACION DEL PERFIL */
+
+
+/* PUBLICACIONES DEL PERFIL */
+
+#div-informacion-perfil{
+	width: 100%;
+	height: max-content;
+	min-height: 40vh;
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+}
+#div-InPerfil{
+	width: 100%;
+	height: max-content;
+	min-height: 40vh;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+#div-publicacion-InPerfil{
+	width: 65%;
+	height: max-content;
+	min-height: 40vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+#prueba-post{
+	width: 80%;
+	height: 200vh;
+	background: #00000010;
+}
+
+/* INFORMACION PERSONAL DEL PERFIL */
+
+#div-info-InPerfil{
+	width: 35%;
+	height: 45vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	position: sticky;
+	top: 6vh;
+}
+.div-info-perfiles{
+	width: 100%;
+	height: max-content;
+	min-height: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+}
+#div-nombre-IPIInPerfil{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#div-descripcion-IPIInPerfil{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#nombre-usuario-perfil{
+	font-size: 2.6rem;
+	font-weight: 600;
+	font-family: Lucida Sans;
+	color: #0d94ca;
+	text-shadow: 1px 1px 2px #00000060;
+}
+#descripcion-usuario-perfil{
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: Lucida Sans;
+	text-wrap: balance;
+}
+
+
+#div-titulo-hobbys-IInPerfil{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#titulo-hobbys-perfil{
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: Lucida Sans;
+	/* color: #0d94ca; */
+	color: #505050;
+	/* text-shadow: 0px 0px 2px #0d94ca; */
+}
+#div-titulo-contactos-IInPerfil{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#titulo-contactos-perfil{
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: Lucida Sans;
+	/* color: #0d94ca; */
+	color: #505050;
+	/* text-shadow: 0px 0px 2px #0d94ca; */
+}
+#div-titulo-amigos-IInPerfil{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+}
+#titulo-amigos-perfil{
+	font-size: 1.4rem;
+	font-weight: 600;
+	font-family: Lucida Sans;
+	/* color: #0d94ca; */
+	color: #505050;
+	/* text-shadow: 0px 0px 2px #0d94ca; */
+}
+#span-amigos-perfil{
+	font-size: 1.4rem;
+	font-weight: 600;
+	font-family: Lucida Sans;
+	color: #0d94ca;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.div-lista-HC-perfil{
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+
+

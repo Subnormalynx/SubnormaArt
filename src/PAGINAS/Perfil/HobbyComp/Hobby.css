@@ -1,0 +1,15 @@
+.hobby-perfil{
+	width: max-content;
+	height: max-content;
+	padding: 0.2rem 0.5rem;
+	font-size: 1rem;
+	font-family: Lucida Sans;
+	font-weight: 600;
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	background: #0d94ca;
+	color: white;
+}

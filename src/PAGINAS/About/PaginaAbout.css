@@ -41,12 +41,12 @@
 
 .fade-enter{
   opacity: 0;
-  filter: blur(30px);
+  filter: blur(50px);
 }
 .fade-enter-active{
   opacity: 1;
   filter: blur(0px);
-  transition: all .6s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 .fade-enter-done{
   opacity: 1;
@@ -59,10 +59,10 @@
 }
 .fade-exit-active{
   opacity: 0;
-  filter: blur(30px);
-  transition: all .6s ease-in-out;
+  filter: blur(50px);
+  transition: all .4s ease-in-out;
 }
 .fade-exit-done{
-  filter: blur(30px);
+  filter: blur(50px);
   opacity: 0;
 }

@@ -1,14 +1,37 @@
 import React from 'react'
 import './Header.css'
+import { CSSTransition , TransitionGroup} from 'react-transition-group'
+import Boton from '../BotonComp/Boton'
+import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
-function Header() {
+function Header({ btnVolver=false }) {
+  
   return (
     <header id="header-general">
-      <h1 id="titulo-pagina-HG">SubnormaArt</h1>
-      <input type="search" name="buscador-articulo-HG" id="buscador-articulo-HG" />
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-sliders2" id='icon-ajustes' viewBox="0 0 16 16">
-        <path fillRule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
-      </svg>
+      <CSSTransition
+      key={'btnVolverkey'}
+      in={btnVolver}
+      timeout={600}
+      classNames='aparicion'
+      unmountOnExit
+      >
+        <Link to='/'>
+          <Boton texto='Volver al inicio' key='btn-volver-amigos-key' />   
+        </Link>
+      </CSSTransition>
+    
+      <div id="div-todo-header">
+        <h1 id="titulo-pagina-HG">SubnormaArt</h1>
+        <input type="search" name="buscador-articulo-HG" id="buscador-articulo-HG"  placeholder='Busca un articulo...' />
+        <div id="div-icon-ajustes-header">
+          <i title='Ajustes'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-sliders2" id='icon-ajustes' viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
+            </svg>
+          </i>
+        </div>
+      </div>
     </header>
   )
 }

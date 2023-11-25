@@ -1,18 +1,16 @@
 import React from 'react'
+import './PaginaEditor.css'
+import Header from '../../COMPONENTES-EHTML/HeaderComp/Header';
 import Boton from '../../COMPONENTES-EHTML/BotonComp/Boton'
 import { Link } from 'react-router-dom';
-
-import './PaginaEditor.css'
 
 function PaginaEditor({}) {
   return (
     <div id='contenedor-editor'>
+      <Header btnVolver={true} />
       <div id="div-inputEditor-aside">
         <div id="div-input-editor">
-          <Link to='/'>
-            <Boton clase='tab-DN' texto='volver al inicio' />
-          </Link>
-          <h1 id='titulo-editor'>Crea tus publicaciones aqui</h1>
+          <h1 id='titulo-editor'>Crea tus publicaciones aqui y expresate...</h1>
           <label className='label-input-IE'>
             Titulo
             <textarea name="input-titulo-IE" id="input-titulo-IE" placeholder='Un buen titulo que llame la atencion...'></textarea>

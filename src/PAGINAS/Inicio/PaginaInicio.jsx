@@ -1,28 +1,37 @@
-import React, { useState, useRef } from 'react'
-import Header from '../../COMPONENTES-EHTML/HeaderComp/Header.jsx'
-import { Link } from 'react-router-dom'
-import PaginaAbout from '../About/PaginaAbout'
+import React, { useState, useEffect } from 'react'
 import './PaginaInicio.css'
+import { useContextosLogin, useContextosLoginLocalStorage } from '../../CONTEXTOS/ContextoLogin.jsx'
+import { useBoolAbout, useSetBoolAbout } from '../../CONTEXTOS/ContextoAbout.jsx'
+import { Link } from 'react-router-dom'
+import { CSSTransition } from 'react-transition-group'
+//COMPONENTES
+import Header from '../../COMPONENTES-EHTML/HeaderComp/Header.jsx'
+import PaginaAbout from '../About/PaginaAbout'
 import Boton from '../../COMPONENTES-EHTML/BotonComp/Boton.jsx'
 import ImgPUC from '../../COMPONENTES-EHTML/ImgPerfilUsComp/ImgPUC.jsx'
-import { SwitchTransition, CSSTransition } from 'react-transition-group'
+import Login from '../../LOGIN/Login.jsx'
 
-
-function PaginaInicio({nombre='perfilUs'}) {
-
-  const [mostrarAbout, setMostrarAbout] = useState(false);
-  const nodeRef = useRef(null);
+function PaginaInicio() {
+  const BA = useBoolAbout();
+  const sBA = useSetBoolAbout();
+  const CL = useContextosLogin();
+  
   return (
     <div id="contenedor-inicio">
+      <CSSTransition
+        in={!CL[2]}
+        timeout={2000}
+        classNames='login'
+        unmountOnExit
+      > 
+        <Login />
+      </CSSTransition>
       <Header />
       <div id="contenedor-contenido-inicio">
         <div id="div-articulo-navegador-CCI">
           <div id='div-navegador' >
-            <Link to={'/' + nombre}>
+            <Link to='/perfil'>
               <ImgPUC clase='imagen-perfil-us-DN'/>
-            </Link>
-            <Link to='/'>
-              <Boton clase='tab-DN' texto='inicio' />
             </Link>
             <Link to='/editor'>
               <Boton clase='tab-DN' texto='publicar' />
@@ -30,7 +39,7 @@ function PaginaInicio({nombre='perfilUs'}) {
             <Link to='/amigos'>
               <Boton clase='tab-DN' texto='amigos' />
             </Link>
-            <Boton clase='tab-DN' texto='about us' callb={() => {setMostrarAbout(!mostrarAbout)}}/>
+            <Boton clase='tab-DN' texto='about us' callb={(e) => {e.stopPropagation(), sBA()}}/>
           </div>
           <div id="div-articulo-CCI">
           </div>
@@ -41,8 +50,8 @@ function PaginaInicio({nombre='perfilUs'}) {
         </aside>
       </div>
       <CSSTransition
-      in={mostrarAbout}
-      timeout={600}
+      in={BA}
+      timeout={400}
       classNames='fade'
       unmountOnExit
       >

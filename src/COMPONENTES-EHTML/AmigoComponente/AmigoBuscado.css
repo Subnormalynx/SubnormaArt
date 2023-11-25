@@ -1,0 +1,53 @@
+.div-amigo-inicio{
+  width: 95%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.1rem 0.2rem;
+  background-color: #00000008;
+  border-radius: 0.5rem;
+}
+.div-info-amigo-inicio{
+  width: 80%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.imagen-perfil-amigo-inicio{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nombre-amigo-inicio{
+  font-size: 0.8rem;
+  text-align: center;
+  text-wrap: balance;
+}
+.agregar-amigo-inicio{
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 60%;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: var(--color-principal);
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+.agregar-amigo-inicio:hover{
+  color: var(--color-principal);
+  background-color: black;
+}

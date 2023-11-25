@@ -1,0 +1,18 @@
+.div-info-post{
+  width: 100%;
+  height: max-content;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+.titulo-post{
+  font-size: 1.4rem;
+}
+.info-post{
+  width: 100%;
+  height: max-content;
+  font-size: 1rem;
+  text-wrap: balance;
+}
